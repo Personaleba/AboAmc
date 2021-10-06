@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 17px;
+    font-family: 'Exo 2', sans-serif;
+    background-color: antiquewhite;
+}
+
+.margin_menu {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Stick No Bills', sans-serif;
+    font-weight: bold;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (max-width: 576px) {
+    .logo_container {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .margin_menu {
+        margin: 0;
+    }
+    nav {
+        background-color: whitesmoke!important;
+        text-align: center;
+    }
+    .socials ul {
+        display: flex!important;
+        flex-direction: row;
+    }
+    .socials {
+        margin: 0!important;
+        display: flex!important;
+        flex-direction: row!important;
+        justify-content: space-around;
+        vertical-align: middle;
+    }
+    .my_menu li:first-child {
+        margin-top: 8px;
+    }
+    .my_menu li a:hover {
+        color: grey!important;
+        border: none!important;
+    }
+    .socials li a:hover {
+        transform: none!important;
+    }
+    #news_container {
+        margin-bottom: 30px;
+    }
+    .footer_wrapper div:last-child {
+        margin-top: 20px;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (max-width: 991px) {
+    .margin_menu {
+        margin: 0;
+    }
+    nav {
+        background-color: whitesmoke!important;
+        text-align: center;
+    }
+    .socials {
+        border-top: 3px dotted rgb(190, 186, 186);
+        padding-top: 10px;
+        margin: 0!important;
+        display: flex!important;
+        flex-direction: row!important;
+        justify-content: space-around;
+    }
+    .socials li a:hover {
+        background-color: rgb(189, 162, 115)!important;
+    }
+    .socials li a i:hover {
+        color: rgb(160, 65, 94)!important;
+    }
+    .socials ul li {
+        display: flex;
+        justify-content: space-around;
+    }
+    .my_menu li:first-child {
+        margin-top: 8px;
+    }
+    .my_menu li a:hover {
+        color: grey!important;
+        border: none!important;
+    }
+    .socials li a:hover {
+        transform: none!important;
+    }
+    .footer_wrapper div:last-child {
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+
+/* @media (min-width: 992px) {
+    ...
+} */
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+
+/* @media (min-width: 1200px) {
+    ...
+} */
+
+
+/* Fine Media Queries */
+
+
+/* Inizio dell' HEADER */
+
+nav {
+    padding: 10px;
+    background-color: rgba(194, 182, 166, 0.418);
+}
+
+#logo {
+    width: 150px;
+    margin-right: 20px;
+}
+
+.my_menu {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.my_menu li a {
+    border-bottom: 5px solid transparent;
+}
+
+.my_menu li a:hover {
+    border-bottom: 5px solid yellowgreen;
+    color: rgb(177, 177, 177)!important;
+}
+
+.socials {
+    font-size: 20px;
+    margin-right: 50px;
+    line-height: 20px;
+}
+
+.insta {
+    font-size: 25px;
+}
+
+.socials li a {
+    transition: 0.10s;
+}
+
+.socials li a:hover {
+    color: rgb(2, 116, 2)!important;
+    transform: scale(1.3);
+}
+
+.socials li:first-child a {
+    background-color: rgb(241, 188, 188);
+    /* padding: 7.5px 30px 7.5px 30px!important; */
+    color: white!important;
+}
+
+.socials li:nth-child(2) a {
+    background-color: blue;
+    color: white!important;
+}
+
+.socials li:nth-child(3) a {
+    background-color: black;
+    color: white!important;
+}
+
+.socials li:nth-child(4) a {
+    background-color: red;
+    color: white!important;
+}
+
+.socials li:nth-child(4) {
+    margin-left: 10px;
+}
+
+.socials li:first-child a,
+.socials li:nth-child(2) a,
+.socials li:nth-child(3) a,
+.socials li:nth-child(4) a {
+    /* padding: 10px 30px 10px 30px; */
+    border-radius: 50%;
+    width: 50px!important;
+    height: 50px!important;
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+}
+
+.socials li a:focus {
+    background-color: rgb(189, 162, 115)!important;
+}
+
+.socials li a:focus {
+    color: rgb(160, 65, 94)!important;
+}
+
+
+/* Fine Header */
+
+
+/* Parte del MAIN */
+
+#news_container {
+    background-color: rgb(216, 171, 24);
+    margin: 0 auto;
+    height: 330px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(48, 34, 34, 0.6);
+    background-blend-mode: overlay;
+    transition: 1s;
+    cursor: pointer;
+    text-decoration: none;
+    width: 500px;
+    margin: 20px;
+}
+
+#news_container:hover {
+    transform: scale(1.1);
+}
+
+#news_container:hover h1 {
+    color: lightgrey;
+}
+
+.inventory {
+    margin-bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+#news_container h1 {
+    font-weight: 900;
+    font-family: 'Stick No Bills', sans-serif;
+    text-align: center;
+    color: white;
+    line-height: 40px;
+}
+
+#news_container p {
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    line-height: normal;
+    width: 95%;
+}
+
+#news_container:first-child {
+    background-image: url("primavera.jpg");
+}
+
+#news_container:nth-child(2) {
+    background-image: url("estate.jpg");
+}
+
+#news_container:nth-child(3) {
+    background-image: url("autunno.jpg");
+}
+
+#news_container:nth-child(4) {
+    background-image: url("inverno.jpg");
+}
+
+
+/* Fine parte del MAIN */
+
+
+/* Inizio Footer */
+
+footer {
+    padding-top: 15px;
+    width: 100%;
+    padding-bottom: 15px;
+    background-color: rgba(194, 182, 166, 0.418);
+    border-top: 10px ridge rgba(211, 211, 211, 0.575);
+}
+
+.footer_socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_wrapper div {
+    display: flex!important;
+    justify-content: center!important;
+}
+
+.footer_wrapper div {
+    flex-direction: column;
+}
+
+.footer_wrapper div:not(:last-child) {
+    align-items: center;
+}
+
+.footer_wrapper .logo {
+    width: 150px;
+    vertical-align: middle;
+}
+
+.social {
+    margin-right: 10px;
+    vertical-align: middle;
+    line-height: 50px;
+    font-size: 30px;
+    list-style-type: none;
+}
+
+.social:last-child {
+    margin: 0;
+}
+
+.social .insta {
+    font-size: 35px;
+}
+
+.social a {
+    color: black;
+}
+
+.social a:hover {
+    color: orange;
+}
+
+.footer_wrapper div:last-child span:last-child {
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+/* Fine Footer */

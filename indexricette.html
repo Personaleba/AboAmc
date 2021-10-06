@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Stick+No+Bills:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Link al mio CSS -->
-    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="mastericette.css">
     <title>AMC - In cucina con Ele</title>
     <link rel="icon" href="favicon.ico">
 </head>
@@ -67,53 +67,34 @@
                 </ul>
             </div>
         </nav>
-
-        <!-- Parte principale header -->
-        <div id="jumbotron">
-            <h1 class="col-12 text-center">MANGIARE MEGLIO, <br> VIVERE MEGLIO.</h1>
-        </div>
     </header>
     <!-- Fine HEADER -->
 
     <!-- Inizio MAIN -->
-    <main>
-        <div class="inventory">
-            <a id="news_container" href="#">
-                <h1>NOVITA'</h1>
-            </a>
-            <a id="news_container" href="#">
-                <h1>PIU' VENDUTI</h1>
-            </a>
-        </div>
-        <div class="parent_svg">
-            <div class="svg_container">
-                <svg viewBox="0 50 500 500" preserveAspectRatio="xMinYMin meet">
-                  <path d="M0,90 C150,180 350,0 580,180 L500,00 L0,0 Z" style="stroke: none; fill:antiquewhite;"></path>
-                </svg>
+    <main style="margin-top: 100px;">
+        <div class="container-fluid">
+            <h1 class="text-center">LE STAGIONALI</h1>
+            <div class="inventory">
+                <a id="news_container" href="#">
+                    <h1>PRIMAVERA</h1>
+                    <p>Per far sbocciare ogni giorno una ricetta gustosa.</p>
+                </a>
+                <a id="news_container" href="#">
+                    <h1>ESTATE</h1>
+                    <p>Prova le nostre nuove ricette, <br> per una ventata d'aria fresca!</p>
+                </a>
+                <a id="news_container" href="#">
+                    <h1>AUTUNNO</h1>
+                    <p>L'autunno: ricette per tutti i gusti e... Colori!</p>
+                </a>
+                <a id="news_container" href="#">
+                    <h1>INVERNO</h1>
+                    <p>Scopri i piatti che ti scalderanno il cuore!</p>
+                </a>
             </div>
         </div>
 
-        <!-- Inizio Reviews Section -->
-        <div id="reviews_section">
-            <div class="reviews_wrapper container">
-                <div class="row">
-                    <h1>ESPLORA LE RICETTE</h1>
-                </div>
-                <div id="root" class="ms_container">
-                    <div class="ms_wrapper">
-                        <div class="slide_prev"><i class="fas fa-caret-left" @click="prevPhoto"></i></div>
-                        <div class="images_container">
-                            <img :src="photos[counterPhotos]" alt="">
-                        </div>
-                        <div class="slide_next"><i class="fas fa-caret-right arright" @click="nextPhoto"></i></div>
-                        <div class="slider">
-                            <i class="fas fa-circle" @click="clickCircle(index)" class="fas fa-circle" v-for="(circle, index) in photos" :class="(index == counterPhotos) ? 'active' : null"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Fine Reviews Section -->
+
     </main>
     <!-- Fine MAIN -->
 

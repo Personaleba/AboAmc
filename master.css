@@ -11,8 +11,8 @@ body {
 }
 
 .margin_menu {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 h1 {
@@ -65,6 +65,44 @@ h1 {
     .footer_wrapper div:last-child {
         margin-top: 20px;
     }
+    #reviews_section {
+        padding-top: 110px!important;
+    }
+    #reviews_section h1 {
+        text-align: center;
+    }
+    .reviews_wrapper {
+        display: flex!important;
+        flex-direction: column!important;
+        align-items: center!important;
+        width: 100%!important;
+    }
+    #root {
+        width: 100%!important;
+        height: 40vh!important;
+    }
+    .images_container {
+        margin: auto;
+        height: 90%;
+        width: 100%!important;
+        margin-top: 35px;
+    }
+    .slide_prev,
+    .slide_next {
+        bottom: 40%;
+        transform: translateY(-40%);
+    }
+    .slide_prev {
+        display: none!important;
+    }
+    .slide_next {
+        display: none!important
+    }
+    .slider {
+        bottom: 5px!important;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 
@@ -110,6 +148,75 @@ h1 {
         margin-top: 20px;
         text-align: center;
     }
+    #reviews_section {
+        padding-top: 180px!important;
+    }
+    .ms_container {
+        width: 100%;
+        height: 70vh!important;
+    }
+    .images_container {
+        margin: auto;
+        height: 90%;
+        width: 100%!important;
+        margin-top: 35px;
+    }
+    .slide_prev,
+    .slide_next {
+        bottom: 40%;
+        transform: translateY(-40%);
+    }
+    .slide_prev {
+        display: none!important;
+    }
+    .slide_next {
+        display: none!important;
+    }
+    .slider {
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+/* Devices 767px */
+
+@media screen and (min-width: 577px) and (max-width: 767px) {
+    #reviews_section {
+        padding-top: 150px!important;
+    }
+    .ms_container {
+        width: 100%;
+        height: 70vh!important;
+        display: flex;
+        justify-content: center!important;
+    }
+    .images_container {
+        margin: auto;
+        height: 90%;
+        width: 100%!important;
+        margin-top: 35px;
+    }
+    .slide_prev,
+    .slide_next {
+        bottom: 40%;
+        transform: translateY(-40%);
+    }
+    .slide_prev {
+        right: 105%!important;
+    }
+    .slide_next {
+        left: 105%!important;
+    }
+    .reviews_wrapper {
+        padding: 0!important;
+    }
+    /* .ms_wrapper {
+        height: 100%;
+        width: 130%;
+        position: relative;
+    } */
 }
 
 
@@ -193,9 +300,19 @@ nav {
     color: white!important;
 }
 
+.socials li:nth-child(4) a {
+    background-color: red;
+    color: white!important;
+}
+
+.socials li:nth-child(4) {
+    margin-left: 10px;
+}
+
 .socials li:first-child a,
 .socials li:nth-child(2) a,
-.socials li:nth-child(3) a {
+.socials li:nth-child(3) a,
+.socials li:nth-child(4) a {
     /* padding: 10px 30px 10px 30px; */
     border-radius: 50%;
     width: 50px!important;
@@ -220,11 +337,11 @@ nav {
     background-image: url("amc_principal.jpg");
     height: 100vh;
     position: relative;
-    margin-bottom: 50px;
     background-size: cover;
     background-color: rgba(48, 34, 34, 0.418);
     background-blend-mode: overlay;
     background-attachment: fixed;
+    border-bottom: 10px ridge rgba(250, 235, 215, 0.384);
 }
 
 #jumbotron h1 {
@@ -277,11 +394,12 @@ main {
 
 .inventory {
     margin-bottom: 0;
-    margin-top: 100px;
+    padding-top: 100px;
     display: flex;
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
+    border-top: 10px ridge rgba(250, 235, 215, 0.384);
 }
 
 #news_container h1 {
@@ -333,7 +451,7 @@ svg {
 
 #reviews_section {
     background-color: rgb(170, 157, 118);
-    padding-top: 300px;
+    padding-top: 270px;
     border-bottom: 10px ridge antiquewhite;
 }
 
@@ -419,12 +537,11 @@ svg {
 }
 
 .slide_prev i:hover {
-    color: rgb(255, 255, 125);
+    color: white;
 }
 
 .slide_next i:hover {
     color: white;
-    !important;
 }
 
 .slide_prev {
@@ -453,6 +570,7 @@ svg {
 .slider i {
     cursor: pointer;
     font-size: 1.3em;
+    margin: 8px;
 }
 
 .arright {
