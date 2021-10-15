@@ -294,6 +294,41 @@ nav {
     background-image: url("inverno.jpg");
 }
 
+.stagionali {
+    border-bottom: 10px solid white;
+    background-image: url("seasons.jpg");
+    padding-top: 120px;
+    background-size: cover;
+    background-position: center;
+}
+
+.festive {
+    background-color: snow;
+    padding: 70px 0 40px 0;
+    background-image: url("celebration_wall.jpg");
+    background-size: cover;
+}
+
+.inventory_2 #news_container:first-child {
+    background-image: url("carnevale.jpg");
+}
+
+.inventory_2 #news_container:nth-child(2) {
+    background-image: url("pasqua.jpg");
+}
+
+.inventory_2 #news_container:nth-child(3) {
+    background-image: url("halloween.jpg");
+}
+
+.inventory_2 #news_container:nth-child(4) {
+    background-image: url("natale.jpg");
+}
+
+.inventory_2 #news_container {
+    box-shadow: 20px 14px 20px 10px rgb(128 128 128 / 64%);
+}
+
 
 /* Fine parte del MAIN */
 
