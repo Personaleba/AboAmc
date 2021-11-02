@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 17px;
+    font-family: 'Exo 2', sans-serif;
+    background-color: antiquewhite;
+}
+
+.margin_menu {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 3.2em;
+}
+
+/* Inizio main */
+
+#contact .card:hover i,#contact .card:hover h4{
+	color: #87d37c;
+}
+
+/* Fine main */
+
+
+/* Inizio footer */
+
+footer {
+    padding-top: 15px;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.footer_socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_wrapper div {
+    display: flex!important;
+    justify-content: center!important;
+}
+
+.footer_wrapper div {
+    flex-direction: column;
+}
+
+.footer_wrapper div:not(:last-child) {
+    align-items: center;
+}
+
+.footer_wrapper .logo {
+    width: 150px;
+    vertical-align: middle;
+}
+
+.social {
+    margin-right: 10px;
+    vertical-align: middle;
+    line-height: 50px;
+    font-size: 30px;
+    list-style-type: none;
+}
+
+.social:last-child {
+    margin: 0;
+}
+
+.social .insta {
+    font-size: 35px;
+}
+
+.social a {
+    color: black;
+}
+
+.social a:hover {
+    color: orange;
+}
+
+.footer_wrapper div:last-child span:last-child {
+    font-style: italic;
+    font-weight: bold;
+}
