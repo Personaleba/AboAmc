@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- meta tag per migliore viewport BOOTSTRAP -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Link Bootstrap CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Link Font-Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <!-- Link Caratteri Testi -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Stick+No+Bills:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Link al mio CSS -->
+    <link rel="stylesheet" href="mastericette.css">
+    <link rel="stylesheet" href="masterlistaricette.css">
+    <title>AMC - In cucina con Ele</title>
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <!-- Inizio HEADER -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="logo_container col-3">
+                <a id="page_title" class="navbar-brand" href="#"><img id="logo" src="Logo_Ele_pinnato.png" alt=""></a>
+            </div>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <!-- Sezione Menu -->
+            <div class="col-12 col-lg-6 col-md-12 col-sm-12 collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="my_menu navbar-nav m-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item active margin_menu">
+                        <a class="nav-link" href="indexricette.html">RICETTE</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="indexcontatti.html">
+                            CONTATTI</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Sezione Social -->
+            <div class="col-12 col-lg-3 col-md-12 col-sm-12 collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto socials">
+                    <li class="nav-item active">
+                        <a class="insta nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li class="nav-item active margin_menu">
+                        <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><i class="fab fa-tiktok"></i></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Fine HEADER -->
+
+    <!-- Inizio MAIN -->
+    <main>
+        <div class="cont_principal">
+            <div class="cont_central">
+                <div class="cont_modal cont_modal_active">
+                    <div class="cont_photo">
+                        <div class="cont_img_back">
+                            <img src="https://s-media-cache-ak0.pinimg.com/736x/57/98/9f/57989f2a2e186e38bf93429aa395120c.jpg" alt="" />
+                        </div>
+                        <div class="cont_mins">
+                            <div class="sub_mins">
+                                <h3>50</h3>
+                                <span>MINS</span>
+                            </div>
+                            <div class="cont_icon_right">
+                                <a href="#"> <i class="material-icons">&#xE8E7;</i></a>
+                            </div>
+                        </div>
+                        <div class="cont_servings">
+                            <h3>4</h3>
+                            <span>SERVINGS</span>
+                        </div>
+                        <div class="cont_detalles">
+                            <h3>Shakshuka With Feta</h3>
+                            <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis est est aliquam, sed faucibus massa lobortis. Maecenas non est justo.</p>
+                        </div>
+                    </div>
+                    <div class="cont_text_ingredients">
+                        <div class="cont_over_hidden">
+
+                            <div class="cont_tabs">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <h4>INGREDIENTS</h4>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <h4>PREPARATION</h4>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="cont_text_det_preparation">
+                                <div class="cont_title_preparation">
+                                    <p>STEP 1</p>
+                                </div>
+                                <div class="cont_info_preparation">
+                                    <p>Heat oven to 375 degress</p>
+                                </div>
+                                <div class="cont_text_det_preparation">
+
+                                    <div class="cont_title_preparation">
+                                        <p>STEP 2</p>
+                                    </div>
+                                    <div class="cont_info_preparation">
+                                        <p>Heat oil in a large skillet over medium-low head. Add onion and bell papper. Cook gently until very soft, about 20 minutes. Add garlic and cook until tender, 1 to 2 minutes; stir in cumin, paprika and cook 1 minute.
+                                            Pour in tomatoes and season with 3/4 teaspoon salt and 1/4 teaspoon pepper;</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="cont_btn_mas_dets">
+                                <a href="#"><i class="material-icons">&#xE313;</i></a>
+                            </div>
+
+                        </div>
+                        <div class="cont_btn_open_dets">
+                            <a href="#e" onclick="open_close()"><i class="material-icons">&#xE314;</i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+    </main>
+    <!-- Fine MAIN -->
+
+    <!-- OPPURE ALTRO MAIN ------------------------ -->
+
+
+    <div class="recipe">
+        <div class="recipe-panel">
+            <div class="recipe-cover">
+                <div class="cont_img_back">
+                    <img src="https://s-media-cache-ak0.pinimg.com/736x/57/98/9f/57989f2a2e186e38bf93429aa395120c.jpg" alt="" style="width: 350px; margin-top: -30px;" />
+                </div>
+                <div class="cont_mins">
+                    <div class="sub_mins">
+                        <h3>50</h3>
+                        <span>MINS</span>
+                    </div>
+                    <div class="cont_icon_right">
+                        <a href="#"><i class="material-icons">&#xE8E7;</i></a>
+                    </div>
+                </div>
+                <div class="cont_servings">
+                    <h3>4</h3>
+                    <span>SERVINGS</span>
+                </div>
+                <div class="cont_detalles">
+                    <h3>Shakshuka With Feta</h3>
+                    <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis est est aliquam, sed faucibus massa lobortis. Maecenas non est justo.</p>
+                </div>
+            </div>
+            <div class="recipe-content">
+                <div class="tabs tabs-style-underline">
+                    <nav>
+                        <ul class="nav nav-tabs nav-justified" role="tablist">
+                            <li role="presentation"><a href="#ingredients" aria-controls="home" role="tab" data-toggle="tab">Ingredients</a></li>
+                            <li role="presentation" class="active"><a href="#preperation" aria-controls="profile" role="tab" data-toggle="tab">Preperation</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="tab-content ">
+                    <div role="tabpanel " class="tab-pane fade in active" id="ingredients">
+
+                    </div>
+                    <div role="tabpane2" class="tab-pane fade" id="preperation">
+
+                        <div class="cont_text_det_preparation">
+                            <div class="cont_title_preparation">
+                                <p>STEP 1</p>
+                            </div>
+                            <div class="cont_info_preparation">
+                                <p>Heat oven to 375&deg;</p>
+                            </div>
+                            <div class="cont_text_det_preparation">
+
+                                <div class="cont_title_preparation">
+                                    <p>STEP 2</p>
+                                </div>
+                                <div class="cont_info_preparation">
+                                    <p>Heat oil in a large skillet over medium-low head. Add onion and bell papper. Cook gently until very soft, about 20 minutes. Add garlic and cook until tender, 1 to 2 minutes; stir in cumin, paprika and cook 1 minute.
+                                        Pour in tomatoes and season with 3/4 teaspoon salt and 1/4 teaspoon pepper;</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="recipe-toggle">
+            <a href="#" class="btn btn-link"><span class="material-icons">arrow_back</span></a>
+        </div>
+    </div>
+
+    <!-- Inizio FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row footer_wrapper">
+                <ul class="col-xs-12 col-md-4 col-lg-4 footer_socials">
+                    <li class="social nav-item">
+                        <a class="insta nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li class="social nav-item">
+                        <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="social nav-item">
+                        <a class="nav-link" href="#"><i class="fab fa-tiktok"></i></a>
+                    </li>
+                    <li class="social nav-item">
+                        <a class="nav-link" href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                </ul>
+                <div class="col-xs-12 col-md-4 col-lg-4">
+                    <a id="page_title" href="#"><img class="logo" src="Logo_Ele_pinnato.png" alt=""></a>
+                </div>
+                <div class="col-xs-12 col-md-4 col-lg-4">
+                    <span>Per prenotazioni, supporto, richieste, informazioni scrivere a:</span><span>eleonora.demartis@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Fine FOOTER -->
+
+    <!-- JS import -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="script2.js"></script>
+</body>
+
+</html>

@@ -15,16 +15,97 @@ body {
     margin-right: 10px;
 }
 
-h1 {
-    font-family: 'Architects Daughter', cursive;
-    font-size: 3.2em;
-}
 
 /* Inizio main */
 
-#contact .card:hover i,#contact .card:hover h4{
-	color: #87d37c;
+#contact .card:hover i,
+#contact .card:hover h4 {
+    color: #87d37c;
 }
+
+.contacts_wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+}
+
+.contacts_wrapper a {
+    display: flex;
+    width: 300px;
+    margin: 10px;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.contacts_wrapper a i {
+    vertical-align: middle;
+    font-size: 2.5em;
+    background-color: yellow;
+    padding: 10px 15px 10px 15px;
+    color: white;
+    transition: 0.4s;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.contacts_wrapper a p {
+    background-color: red;
+    vertical-align: bottom;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    transition: 0.4s;
+}
+
+.contacts_wrapper a:hover p {
+    transform: translate(0.2em, 0);
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#inst {
+    background-color: rgb(241, 188, 188);
+}
+
+#instp {
+    background-color: rgb(224, 158, 158);
+}
+
+#face {
+    background-color: blue;
+}
+
+#facep {
+    background-color: rgb(125, 173, 201);
+}
+
+#tik {
+    background-color: black;
+}
+
+#tikp {
+    background-color: rgb(63, 60, 60);
+}
+
+#yt {
+    background-color: red;
+}
+
+#ytp {
+    background-color: rgb(175, 47, 47);
+}
+
 
 /* Fine main */
 
@@ -84,6 +165,28 @@ footer {
 
 .social a:hover {
     color: orange;
+}
+
+.contact_element {
+    background-color: #d4ccb5;
+    border-radius: 15px;
+}
+
+.contact_element h4 {
+    font-family: 'Stick No Bills', sans-serif;
+    font-weight: bold;
+}
+
+.contact_element i {
+    cursor: pointer;
+}
+
+.contact_element:hover i {
+    color: antiquewhite!important;
+}
+
+.contact_element:hover h4 {
+    color: black!important;
 }
 
 .footer_wrapper div:last-child span:last-child {
