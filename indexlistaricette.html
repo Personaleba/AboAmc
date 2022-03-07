@@ -72,156 +72,22 @@
     <!-- Fine HEADER -->
 
     <!-- Inizio MAIN -->
-    <main>
-        <div class="cont_principal">
-            <div class="cont_central">
-                <div class="cont_modal cont_modal_active">
-                    <div class="cont_photo">
-                        <div class="cont_img_back">
-                            <img src="https://s-media-cache-ak0.pinimg.com/736x/57/98/9f/57989f2a2e186e38bf93429aa395120c.jpg" alt="" />
-                        </div>
-                        <div class="cont_mins">
-                            <div class="sub_mins">
-                                <h3>50</h3>
-                                <span>MINS</span>
-                            </div>
-                            <div class="cont_icon_right">
-                                <a href="#"> <i class="material-icons">&#xE8E7;</i></a>
-                            </div>
-                        </div>
-                        <div class="cont_servings">
-                            <h3>4</h3>
-                            <span>SERVINGS</span>
-                        </div>
-                        <div class="cont_detalles">
-                            <h3>Shakshuka With Feta</h3>
-                            <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis est est aliquam, sed faucibus massa lobortis. Maecenas non est justo.</p>
-                        </div>
-                    </div>
-                    <div class="cont_text_ingredients">
-                        <div class="cont_over_hidden">
-
-                            <div class="cont_tabs">
-                                <ul>
-                                    <li>
-                                        <a href="#">
-                                            <h4>INGREDIENTS</h4>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <h4>PREPARATION</h4>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="cont_text_det_preparation">
-                                <div class="cont_title_preparation">
-                                    <p>STEP 1</p>
-                                </div>
-                                <div class="cont_info_preparation">
-                                    <p>Heat oven to 375 degress</p>
-                                </div>
-                                <div class="cont_text_det_preparation">
-
-                                    <div class="cont_title_preparation">
-                                        <p>STEP 2</p>
-                                    </div>
-                                    <div class="cont_info_preparation">
-                                        <p>Heat oil in a large skillet over medium-low head. Add onion and bell papper. Cook gently until very soft, about 20 minutes. Add garlic and cook until tender, 1 to 2 minutes; stir in cumin, paprika and cook 1 minute.
-                                            Pour in tomatoes and season with 3/4 teaspoon salt and 1/4 teaspoon pepper;</p>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="cont_btn_mas_dets">
-                                <a href="#"><i class="material-icons">&#xE313;</i></a>
-                            </div>
-
-                        </div>
-                        <div class="cont_btn_open_dets">
-                            <a href="#e" onclick="open_close()"><i class="material-icons">&#xE314;</i></a>
-                        </div>
-
-                    </div>
+    <main class="recipe_root" id="root">
+        <div tabindex="1" id="movie_container" v-for="(ricetta, index) in ricette">
+            <!-- LISTA FILM E SERIE TV +... -->
+            <div class="image_container">
+                <img class="null" src="novità.png" alt="">
+                <!-- <img class="found_image" v-else :src="imgFoundSrc + imgFoundSize + found.backdrop_path" alt=""> -->
+                <div class="principal_info">
+                    <h4>{{ricetta.nome}}</h4>
+                    <h4>Macchina: Turbo</h4>
                 </div>
             </div>
-
+        </div>
     </main>
     <!-- Fine MAIN -->
 
-    <!-- OPPURE ALTRO MAIN ------------------------ -->
 
-
-    <div class="recipe">
-        <div class="recipe-panel">
-            <div class="recipe-cover">
-                <div class="cont_img_back">
-                    <img src="https://s-media-cache-ak0.pinimg.com/736x/57/98/9f/57989f2a2e186e38bf93429aa395120c.jpg" alt="" style="width: 350px; margin-top: -30px;" />
-                </div>
-                <div class="cont_mins">
-                    <div class="sub_mins">
-                        <h3>50</h3>
-                        <span>MINS</span>
-                    </div>
-                    <div class="cont_icon_right">
-                        <a href="#"><i class="material-icons">&#xE8E7;</i></a>
-                    </div>
-                </div>
-                <div class="cont_servings">
-                    <h3>4</h3>
-                    <span>SERVINGS</span>
-                </div>
-                <div class="cont_detalles">
-                    <h3>Shakshuka With Feta</h3>
-                    <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis est est aliquam, sed faucibus massa lobortis. Maecenas non est justo.</p>
-                </div>
-            </div>
-            <div class="recipe-content">
-                <div class="tabs tabs-style-underline">
-                    <nav>
-                        <ul class="nav nav-tabs nav-justified" role="tablist">
-                            <li role="presentation"><a href="#ingredients" aria-controls="home" role="tab" data-toggle="tab">Ingredients</a></li>
-                            <li role="presentation" class="active"><a href="#preperation" aria-controls="profile" role="tab" data-toggle="tab">Preperation</a></li>
-                        </ul>
-                    </nav>
-                </div>
-
-                <div class="tab-content ">
-                    <div role="tabpanel " class="tab-pane fade in active" id="ingredients">
-
-                    </div>
-                    <div role="tabpane2" class="tab-pane fade" id="preperation">
-
-                        <div class="cont_text_det_preparation">
-                            <div class="cont_title_preparation">
-                                <p>STEP 1</p>
-                            </div>
-                            <div class="cont_info_preparation">
-                                <p>Heat oven to 375&deg;</p>
-                            </div>
-                            <div class="cont_text_det_preparation">
-
-                                <div class="cont_title_preparation">
-                                    <p>STEP 2</p>
-                                </div>
-                                <div class="cont_info_preparation">
-                                    <p>Heat oil in a large skillet over medium-low head. Add onion and bell papper. Cook gently until very soft, about 20 minutes. Add garlic and cook until tender, 1 to 2 minutes; stir in cumin, paprika and cook 1 minute.
-                                        Pour in tomatoes and season with 3/4 teaspoon salt and 1/4 teaspoon pepper;</p>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="recipe-toggle">
-            <a href="#" class="btn btn-link"><span class="material-icons">arrow_back</span></a>
-        </div>
-    </div>
 
     <!-- Inizio FOOTER -->
     <footer>
@@ -256,8 +122,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
     <script src="script2.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

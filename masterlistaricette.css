@@ -1,26 +1,250 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-
 /*
 -------------- Basic Reset Css ----------
  */
 
 * {
-    margin: 0px auto;
-    padding: 0px;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    font-size: 17px;
+    font-family: 'Exo 2', sans-serif;
+    background-color: antiquewhite;
+}
+
+.margin_menu {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Stick No Bills', sans-serif;
+    font-weight: bold;
+}
+
+a {
+    cursor: pointer;
 }
 
 
-/* -------- ----------- */
+/* INIZIO SECONDA MODALITA' RICETTE (attualmente in uso, boolflix import) */
+
+.recipe_root {
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#movie_container {
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: relative;
+    transform-origin: bottom;
+    transition: 0.5s;
+    transition-delay: 0.15s;
+    margin-bottom: 100px;
+}
+
+#movie_container>* {
+    padding: 5px;
+}
+
+.original_language img,
+.your_language img {
+    width: 25px;
+    vertical-align: middle;
+}
+
+#danish_flag {
+    width: 22.5px;
+}
+
+.found_image {
+    width: 285px;
+    object-fit: contain;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.null {
+    width: 285px;
+    height: 171px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.onHover {
+    display: none;
+    position: absolute;
+    top: 90.5%;
+    z-index: 1000;
+    background-color: #242323;
+    width: 285px;
+}
+
+.onHover i {
+    cursor: pointer;
+}
+
+.image_container {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #25da94e7;
+}
+
+.image_container img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+#movie_container:hover,
+#movie_container:focus {
+    transform: scale(1.25);
+    z-index: 5;
+    outline: none;
+}
+
+#movie_container:hover .onHover,
+#movie_container:focus .onHover {
+    display: block;
+    outline: none;
+    padding: 10px;
+}
+
+.principal_info {
+    position: absolute;
+    top: 97%;
+    left: 7%;
+    width: 287px;
+    height: fit-content;
+    max-height: 100px;
+}
+
+.principal_info h4,
+.principal_info h2 {
+    width: fit-content;
+    padding: 5px;
+}
+
+.principal_info h4:nth-child(2) {
+    background-color: rgba(39, 39, 39, 0.445);
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+.principal_info h2 {
+    font-size: 1.35em;
+    text-align: center;
+}
+
+.booltitle {
+    color: #e7071f;
+    font-weight: bold;
+    text-align: center;
+}
+
+#movie_container:hover .principal_info,
+#movie_container:focus .principal_info {
+    top: 12%;
+    left: 6%;
+    cursor: pointer;
+    color: rgba(218, 255, 117, 0.39);
+}
+
+#movie_container:hover .principal_info .ourTitle,
+#movie_container:focus .principal_info .ourTitle {
+    color: rgba(218, 255, 117, 0.39);
+}
+
+#movie_container:hover .principal_info,
+#movie_container:focus .principal_info {
+    background-color: rgba(39, 39, 39, 0.445);
+    width: 230px;
+}
+
+#movie_container:hover .principal_info h2,
+#movie_container:hover .principal_info h4,
+#movie_container:focus .principal_info h2,
+#movie_container:focus .principal_info h4 {
+    background-color: initial;
+    visibility: visible;
+}
+
+#movie_container:hover .principal_info h2,
+#movie_container:focus .principal_info h2 {
+    font-size: 1em;
+}
+
+.onHover>* {
+    padding: 5px;
+}
+
+.onHover h3:first-child {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #070707e1;
+    border-top: none;
+    border-bottom: 1px solid #181818bd;
+    margin-bottom: 13.5px;
+}
+
+.trama {
+    overflow-y: auto;
+    margin-top: 3px;
+    margin-bottom: 2px;
+    max-height: 120px;
+}
+
+.trama::-webkit-scrollbar {
+    width: 12px;
+    background-color: #0f0f0f;
+    border-radius: 15px;
+}
+
+.trama::-webkit-scrollbar-thumb {
+    background-color: #e7071f;
+    border-radius: 20px;
+    border: 2px solid #1b1212;
+}
+
+.trama::-webkit-scrollbar-thumb:active,
+.trama::-webkit-scrollbar-thumb:hover {
+    background-color: #b91727;
+}
+
+
+/* FINE SECONDA MODALITA' RICETTE (attualmente in uso, boolflix import) */
+
+
+/* -------- PRIMA MODALITA' RICETTE ----------- */
+
+
+/* -------- PRIMA MODALITA' RICETTE ----------- */
+
+
+/* -------- PRIMA MODALITA' RICETTE ----------- */
 
 .cont_principal {
-    position: absolute;
     width: 100%;
     height: 100%;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fbfaf6+9,d4cebf+74,d4cebf+74,d4cebf+100 */
@@ -35,15 +259,17 @@
 }
 
 .cont_central {
-    position: absolute;
     width: 100%;
-    top: 50%;
-    margin-top: -200px;
+    padding: 150px 250px 100px 250px;
+    background-color: antiquewhite;
+}
+
+.cont_central:not(:first-child) {
+    padding: 60px 250px 100px 250px;
 }
 
 .cont_modal {
     position: relative;
-    width: 300px;
     height: 400px;
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
@@ -86,6 +312,7 @@
     -o-transition: all 0.5s;
     transition: all 0.5s;
     transition: all 1s;
+    cursor: pointer;
 }
 
 .cont_img_back:hover>img {
@@ -94,7 +321,7 @@
 
 .cont_text_ingredients {
     position: absolute;
-    width: 0px;
+    width: 100%;
     top: 0px;
     left: 290px;
     margin-left: 10px;
@@ -119,6 +346,10 @@
     -webkit-transition-delay: 0.7s;
     -o-transition-delay: 0.7s;
     transition-delay: 0.7s;
+}
+
+.cont_text_ingredients_visible {
+    display: block;
 }
 
 .cont_mins {
@@ -201,6 +432,7 @@
 
 .cont_detalles {
     position: absolute;
+    padding: 10px;
     bottom: -185px;
     height: 200px;
     border-radius: 5px;
@@ -222,16 +454,12 @@
 }
 
 .cont_detalles>h3 {
-    margin-top: 50px;
+    width: 100%;
+    margin-top: 70px;
+    text-transform: uppercase;
     color: #fff;
-    font-size: 24px;
-}
-
-.cont_detalles>p {
-    color: #fff;
-    width: 80%;
-    text-align: left;
-    font-size: 14px;
+    font-size: 30px;
+    text-align: center;
 }
 
 
@@ -246,7 +474,6 @@
 }
 
 .cont_tabs>ul {
-    width: 300px;
     background-color: #eee;
 }
 
@@ -261,15 +488,13 @@
     border-top: 7px solid #ED346C;
     position: relative;
     display: block;
-    float: left;
     padding-top: 15px;
     color: #241C3E;
     text-decoration: none;
-    margin-left: 15px;
     font-size: 14px;
 }
 
-.cont_tabs>ul>li:first-child>a {
+.cont_tabs>ul li a {
     border-top: 7px solid rgba(237, 52, 108, 0);
     margin-top: 0px;
     color: #9A96A4;
@@ -279,7 +504,7 @@
     transition: all 0.2s;
 }
 
-.cont_tabs>ul>li:first-child>a:hover {
+.cont_tabs>ul li a:focus {
     border-top: 7px solid #ED346C;
     padding-top: 15px;
     color: #241C3E;
@@ -290,6 +515,10 @@
     position: absolute;
     right: -15px;
     top: 50%;
+}
+
+.ingredients {
+    white-space: pre;
 }
 
 .cont_btn_open_dets>a {
@@ -309,7 +538,8 @@
 }
 
 .cont_btn_open_dets>a>i {
-    margin-top: 4px;
+    margin-top: 7px;
+    margin-right: 2px;
 }
 
 .cont_title_preparation {
@@ -344,6 +574,10 @@
     color: #565656;
 }
 
+.cont_info_preparation>p:last-child {
+    margin-bottom: 100px;
+}
+
 .cont_btn_mas_dets {
     position: absolute;
     bottom: 0px;
@@ -363,8 +597,10 @@
 }
 
 .cont_text_det_preparation {
-    position: relative;
-    width: 410px;
+    width: 100%;
+    height: 300px;
+    padding: 0px 30px 30px 30px;
+    overflow-y: auto;
 }
 
 .cont_modal_active>.cont_text_ingredients>.cont_btn_open_dets>a {
@@ -372,7 +608,7 @@
 }
 
 .cont_modal_active>.cont_text_ingredients {
-    width: 410px;
+    width: 100%;
     left: 285px;
     z-index: 1;
     box-shadow: 15px 20px 70px -5px rgba(0, 0, 0, 0.2);
@@ -390,6 +626,11 @@
     opacity: 1;
 }
 
+.sub_mins h3,
+.cont_servings h3 {
+    margin-top: 9.8px;
+}
+
 .cont_modal_active>.cont_photo>.cont_servings {
     opacity: 1;
 }
@@ -399,183 +640,10 @@
 }
 
 
-/* SECONDO MAIN */
+/* -------- FINE PRIMA MODALITA' RICETTE ----------- */
 
-$r-width: 300px;
-$r-height: 360px;
-$r-bg: #fff;
-$r-radius: 5px;
-$r-cover-bg: #666;
-$r-content-bg: #bbb;
-body {
-    background: #ccc;
-    font-family: 'Roboto';
-}
 
-.btn:focus,
-.btn:active {
-    outline: none;
-}
+/* -------- FINE PRIMA MODALITA' RICETTE ----------- */
 
-.nav-tabs.nav-justified>.active>a,
-.nav-tabs.nav-justified>.active>a:focus,
-.nav-tabs.nav-justified>.active>a:hover {
-    border: none;
-    outline: none;
-    border-radius: none;
-}
 
-.recipe {
-    position: relative;
-    margin: 50px auto;
-    width: $r-width;
-    height: $r-height;
-    background: $r-bg;
-    //overflow: hidden;
-    border-radius: $r-radius;
-    box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.3);
-    transition: all 0.8s;
-    .recipe-panel {
-        display: block;
-        position: relative;
-        width: 100%;
-        height: $r-height;
-        overflow: hidden;
-    }
-    .recipe-toggle {
-        background: #fff;
-        position: absolute;
-        right: -18px;
-        top: 50%;
-        margin-top: -20px;
-        //border-top-left-radius: 0.5rem;
-        border-radius: 50%;
-        z-index: 20;
-        transition: all 0.8s;
-        .btn,
-        .btn-link {
-            top: 0;
-            line-height: 48px;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            height: 40px;
-            width: 40px;
-            span {
-                displaay: relative;
-                font-size: 3.4rem;
-                line-height: 54px;
-                top: 3px;
-                right: 20px;
-                transform: rotate(180deg);
-                transition: all 0.8s;
-            }
-        }
-    }
-}
-
-.recipe-cover {
-    position: relative;
-    width: $r-width;
-    height: 360px;
-    overflow: hidden;
-    background: $r-cover-bg;
-    border-radius: $r-radius;
-    z-index: 10;
-}
-
-.recipe-content {
-    position: absolute;
-    top: 0;
-    right: 0px;
-    bottom: 0;
-    width: 360px;
-    height: 100%;
-    padding: 0 35px;
-    .tabs {
-        font-size: 1.25rem;
-        font-weight: 300;
-        margin: 0 auto;
-        overflow: hidden;
-        position: relative;
-        width: 100%;
-        &.tabs-style-underline nav {
-            background: #fff none repeat scroll 0 0;
-        }
-        nav {
-            text-align: center;
-        }
-    }
-    .tabs nav ul {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        list-style: outside none none;
-        margin: 0 auto;
-        max-width: 1200px;
-        padding: 0;
-        position: relative;
-        li {
-            display: block;
-            flex: 1 1 0;
-            margin: 0;
-            position: relative;
-            text-align: center;
-            z-index: 1;
-        }
-        a {
-            display: block;
-            font-size: 1.2rem;
-            line-height: 3.4;
-            overflow: hidden;
-            position: relative;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            font-family: 'Montserrat';
-            font-weight: 400;
-            text-transform: uppercase;
-            letter-spacing: 0.08rem;
-            //color: #2cc185;
-            color: lighten(#74777B, 10%);
-            outline: none;
-            text-decoration: none;
-            border-radius: none;
-        }
-    }
-    .tabs-style-underline nav a {
-        //border-left: 1px solid #e7ecea;
-        padding: 0.25em 0 0.5em;
-        transition: color 0.2s ease 0s;
-    }
-    .tabs-style-underline nav li a::after {
-        background: #2cc185 none repeat scroll 0 0;
-        bottom: 0;
-        content: "";
-        height: 6px;
-        left: 0;
-        position: absolute;
-        transform: translate3d(0px, 150%, 0px);
-        transition: transform 0.3s ease 0s;
-        width: 100%;
-    }
-    .tabs nav li.active a {
-        color: darken(#74777B, 20%);
-    }
-    .tabs-style-underline nav li.active a::after {
-        transform: translate3d(0px, 0px, 0px);
-    }
-}
-
-.recipe-open {
-    width: 660px;
-    .recipe-toggle {
-        right: -20px;
-        margin-top: -25px;
-        .btn,
-        .btn-link {
-            span {
-                transform: rotate(0deg);
-            }
-        }
-    }
-}
+/* -------- FINE PRIMA MODALITA' RICETTE ----------- */
