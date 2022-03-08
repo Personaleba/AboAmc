@@ -106,15 +106,15 @@ a {
 .image_container {
     width: 100%;
     height: 100%;
-    border-radius: 50%;
-    background-color: #25da94e7;
+    margin: 15px;
 }
 
 .image_container img {
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
     object-fit: cover;
+    width: 350px;
+    height: 250px;
+    border-radius: 15px;
+    box-shadow: 15px 15px 20px 10px rgba(128, 128, 128, 0.486);
 }
 
 #movie_container:hover,
@@ -134,8 +134,7 @@ a {
 .principal_info {
     position: absolute;
     top: 97%;
-    left: 7%;
-    width: 287px;
+    left: 11%;
     height: fit-content;
     max-height: 100px;
 }
@@ -152,46 +151,42 @@ a {
     visibility: hidden;
 }
 
-.principal_info h2 {
-    font-size: 1.35em;
-    text-align: center;
-}
-
 .booltitle {
     color: #e7071f;
     font-weight: bold;
     text-align: center;
 }
 
-#movie_container:hover .principal_info,
-#movie_container:focus .principal_info {
-    top: 12%;
-    left: 6%;
+.image_container:hover .principal_info,
+.image_container:focus .principal_info {
+    top: 15%;
+    left: 12.5%;
     cursor: pointer;
+    color: whitesmoke;
+    width: 287px;
+}
+
+.image_container:hover .principal_info .ourTitle,
+.image_container:focus .principal_info .ourTitle {
     color: rgba(218, 255, 117, 0.39);
 }
 
-#movie_container:hover .principal_info .ourTitle,
-#movie_container:focus .principal_info .ourTitle {
-    color: rgba(218, 255, 117, 0.39);
-}
-
-#movie_container:hover .principal_info,
-#movie_container:focus .principal_info {
+.image_container:hover .principal_info,
+.image_container:focus .principal_info {
     background-color: rgba(39, 39, 39, 0.445);
     width: 230px;
 }
 
-#movie_container:hover .principal_info h2,
-#movie_container:hover .principal_info h4,
-#movie_container:focus .principal_info h2,
-#movie_container:focus .principal_info h4 {
+.image_container:hover .principal_info h2,
+.image_container:hover .principal_info h4,
+.image_container:focus .principal_info h2,
+.image_container:focus .principal_info h4 {
     background-color: initial;
     visibility: visible;
 }
 
-#movie_container:hover .principal_info h2,
-#movie_container:focus .principal_info h2 {
+.image_container:hover .principal_info h2,
+.image_container:focus .principal_info h2 {
     font-size: 1em;
 }
 

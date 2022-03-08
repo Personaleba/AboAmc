@@ -73,14 +73,26 @@
 
     <!-- Inizio MAIN -->
     <main class="recipe_root" id="root">
-        <div tabindex="1" id="movie_container" v-for="(ricetta, index) in ricette">
-            <!-- LISTA FILM E SERIE TV +... -->
+        <div tabindex="1" id="movie_container" v-for="ricetta in ricette">
+            <!-- LISTA RICETTE -->
             <div class="image_container">
                 <img class="null" src="novità.png" alt="">
+                <input type="text" v-model="ricetta.id" @click="clicked = !clicked; selectedRecipe(ricetta.id)">
                 <!-- <img class="found_image" v-else :src="imgFoundSrc + imgFoundSize + found.backdrop_path" alt=""> -->
                 <div class="principal_info">
                     <h4>{{ricetta.nome}}</h4>
                     <h4>Macchina: Turbo</h4>
+                </div>
+            </div>
+        </div>
+        <div v-show="clicked" id="selectedRecipe" v-for="(ricetta, index) in ricette">
+            <div>
+                <img src=" " alt=" ">
+                <div>
+                    <h2>INGREDIENTI</h2>
+                    <p>{{ricetta.ingredienti}}</p>
+                    <h2>PREPARAZIONE</h2>
+                    <p>Lista Preparazione</p>
                 </div>
             </div>
         </div>
@@ -91,26 +103,26 @@
 
     <!-- Inizio FOOTER -->
     <footer>
-        <div class="container">
-            <div class="row footer_wrapper">
-                <ul class="col-xs-12 col-md-4 col-lg-4 footer_socials">
-                    <li class="social nav-item">
-                        <a class="insta nav-link" href="#"><i class="fab fa-instagram"></i></a>
+        <div class="container ">
+            <div class="row footer_wrapper ">
+                <ul class="col-xs-12 col-md-4 col-lg-4 footer_socials ">
+                    <li class="social nav-item ">
+                        <a class="insta nav-link " href="# "><i class="fab fa-instagram "></i></a>
                     </li>
-                    <li class="social nav-item">
-                        <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <li class="social nav-item ">
+                        <a class="nav-link " href="# "><i class="fab fa-facebook-f "></i></a>
                     </li>
-                    <li class="social nav-item">
-                        <a class="nav-link" href="#"><i class="fab fa-tiktok"></i></a>
+                    <li class="social nav-item ">
+                        <a class="nav-link " href="# "><i class="fab fa-tiktok "></i></a>
                     </li>
-                    <li class="social nav-item">
-                        <a class="nav-link" href="#"><i class="fab fa-youtube"></i></a>
+                    <li class="social nav-item ">
+                        <a class="nav-link " href="# "><i class="fab fa-youtube "></i></a>
                     </li>
                 </ul>
-                <div class="col-xs-12 col-md-4 col-lg-4">
-                    <a id="page_title" href="#"><img class="logo" src="Logo_Ele_pinnato.png" alt=""></a>
+                <div class="col-xs-12 col-md-4 col-lg-4 ">
+                    <a id="page_title " href="# "><img class="logo " src="Logo_Ele_pinnato.png " alt=" "></a>
                 </div>
-                <div class="col-xs-12 col-md-4 col-lg-4">
+                <div class="col-xs-12 col-md-4 col-lg-4 ">
                     <span>Per prenotazioni, supporto, richieste, informazioni scrivere a:</span><span>eleonora.demartis@gmail.com</span>
                 </div>
             </div>
@@ -119,12 +131,12 @@
     <!-- Fine FOOTER -->
 
     <!-- JS import -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
-    <script src="script2.js"></script>
-    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14 "></script>
+    <script src="script2.js "></script>
+    <script src="main.js "></script>
 </body>
 
 </html>
