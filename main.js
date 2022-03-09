@@ -4,6 +4,7 @@ var app = new Vue({
         isHidden: false,
         clicked: false,
         choosedRecipe: [],
+        pholder: ("Esplora la ricetta!"),
         recipe_001: ("Crema alle mandorle"),
         recipe_002: ("Crema di sedano e patate con funghi porcini"),
         recipe_003: ("Zuppa di fagiolini con le pere"),
@@ -197,7 +198,7 @@ var app = new Vue({
             {
                 id: "recipe_015",
                 nome: "Chili con carne",
-                ingredienti: "600 g di fagioli rossi Kidney secchi \n  4 cipolle \n  4 spicchi d'aglio \n  400 g di carote \n  3 coste di sedano \n  4 peperoncini rossi \n  1 \n 3 kg di carne trita di manzo \n  3 cucchiai di paprica dolce in polvere \n  2 barattoli di polpa di pomodoro \n  (400 g cad.) \n  50 g di concentrato di pomodoro \n  1.5 lt. di brodo di carne \n  200 g di panna da cucina \n  sale \n  pepe",
+                ingredienti: "600 g di fagioli rossi Kidney secchi \n  4 cipolle \n  4 spicchi d'aglio \n  400 g di carote \n  3 coste di sedano \n  4 peperoncini rossi \n  1 \n 3 kg di carne trita di manzo \n  3 cucchiai di paprica dolce in polvere \n  2 barattoli di polpa di pomodoro (400 g cad.) \n  50 g di concentrato di pomodoro \n  1.5 lt. di brodo di carne \n  200 g di panna da cucina \n  sale \n  pepe",
                 procedimento: "Fare ammorbidire i fagioli rossi Kidney in acqua fredda per una notte. Sbucciare e tagliare a cubetti cipolle, aglio e carote. Tagliare il sedano a pezzetti. Eliminare i semi dei peperoncini e tagliarli a cubetti. Riscaldare una unità Ø 24 cm 8 lt. a fuoco massimo fino alla finestra \"carne\" e rosolare la carne trita in più tornate, a fuoco basso, finché non si ‘sbriciola’. Aggiungere cipolle e aglio e rosolarli insieme. Aggiungere la verdura con la paprica in polvere, la polpa e il concentrato di pomodoro e metà dei peperoncini. Bagnare con il brodo, fare sgocciolare i fagioli, sciacquarli brevemente sotto acqua corrente ed aggiungerli. Chiudere l'unità con Secuquick softline 24 cm. Riscaldare a fuoco massimo fino alla prima finestra \"turbo\", poi proseguire la cottura veloce a fuoco basso per 25 minuti circa. Tenere sotto controllo l'intero processo di cottura con Audiotherm. Mettere Secuquick softline sotto l'acqua corrente e aprirlo. Incorporare la panna. Insaporire il chili con sale, pepe, i peperoncini rimasti e il pepe di Cayenna.",
                 tempoCottura: "circa 25",
                 tempoPreparazione: "50",
@@ -250,12 +251,17 @@ var app = new Vue({
                 c++;
             }
         },
+        //Ricetta Selezionata:
         selectedRecipe(recipe_id) {
-            if (this.recipe_001 == recipe_id) {
-                this.choosedRecipe.push(recipe_001);
-            }
-
+            //Accesso a elemento che mi serve e la sua posizione:
+            this.ricette.forEach((element, index) => {
+                if (recipe_id == element.id) {
+                    var ricettaSelezionata = element;
+                    this.choosedRecipe.push(ricettaSelezionata);
+                }
+            });
             console.log(this.choosedRecipe);
         }
+        //Ricetta eliminata premendo sul pulsante X
     }
 });

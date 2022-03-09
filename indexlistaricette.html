@@ -11,7 +11,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Link Font-Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Link Caratteri Testi -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -77,22 +77,30 @@
             <!-- LISTA RICETTE -->
             <div class="image_container">
                 <img class="null" src="novità.png" alt="">
-                <input type="text" v-model="ricetta.id" @click="clicked = !clicked; selectedRecipe(ricetta.id)">
                 <!-- <img class="found_image" v-else :src="imgFoundSrc + imgFoundSize + found.backdrop_path" alt=""> -->
+                <input type="text" class="seeRecipe" v-model="ricetta.id" @click="clicked = !clicked; selectedRecipe(ricetta.id)">
+                <!-- <p>ESPLORA LA RICETTA!</p> -->
                 <div class="principal_info">
                     <h4>{{ricetta.nome}}</h4>
-                    <h4>Macchina: Turbo</h4>
+                    <h4><b>Macchina:</b> {{ricetta.macchina}}</h4>
+                </div>
+                <div class="onHover">
                 </div>
             </div>
         </div>
-        <div v-show="clicked" id="selectedRecipe" v-for="(ricetta, index) in ricette">
-            <div>
-                <img src=" " alt=" ">
-                <div>
-                    <h2>INGREDIENTI</h2>
-                    <p>{{ricetta.ingredienti}}</p>
-                    <h2>PREPARAZIONE</h2>
-                    <p>Lista Preparazione</p>
+        <div v-show="clicked" id="selectedRecipeContainer" v-for="(ricettaSelezionata, index) in choosedRecipe">
+            <div class="selectedRecipe">
+                <i class="fa-solid fa-xmark"></i>
+                <img class="null" src="novità.png" alt="">
+                <div class="recipeInfo">
+                    <div>
+                        <h2>INGREDIENTI</h2>
+                        <p class="ingredients">{{ricettaSelezionata.ingredienti}}</p>
+                    </div>
+                    <div>
+                        <h2>PREPARAZIONE</h2>
+                        <p style="padding-bottom: 30px;">{{ricettaSelezionata.procedimento}}</p>
+                    </div>
                 </div>
             </div>
         </div>
