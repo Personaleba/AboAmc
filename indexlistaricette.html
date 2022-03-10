@@ -90,7 +90,6 @@
         </div>
         <div v-show="clicked" id="selectedRecipeContainer" v-for="(ricettaSelezionata, index) in choosedRecipe">
             <div class="selectedRecipe">
-                <i class="fa-solid fa-xmark"></i>
                 <img class="null" src="novità.png" alt="">
                 <div class="recipeInfo">
                     <div>
@@ -104,6 +103,7 @@
                 </div>
             </div>
         </div>
+        <i v-show="clicked" @click="deleteRecipes()" class="fa-solid fa-xmark"></i>
     </main>
     <!-- Fine MAIN -->
 
@@ -115,16 +115,16 @@
             <div class="row footer_wrapper ">
                 <ul class="col-xs-12 col-md-4 col-lg-4 footer_socials ">
                     <li class="social nav-item ">
-                        <a class="insta nav-link " href="# "><i class="fab fa-instagram "></i></a>
+                        <a target="_blank" class="insta nav-link " href="https://www.instagram.com/cook.whitme_amc/"><i class="fab fa-instagram "></i></a>
                     </li>
                     <li class="social nav-item ">
-                        <a class="nav-link " href="# "><i class="fab fa-facebook-f "></i></a>
+                        <a target="_blank" class="nav-link " href="https://www.facebook.com/eleonora.demartis.52/"><i class="fab fa-facebook-f "></i></a>
                     </li>
                     <li class="social nav-item ">
-                        <a class="nav-link " href="# "><i class="fab fa-tiktok "></i></a>
+                        <a target="_blank" class="nav-link " href="https://vm.tiktok.com/ZMLfYENWU/"><i class="fab fa-tiktok "></i></a>
                     </li>
                     <li class="social nav-item ">
-                        <a class="nav-link " href="# "><i class="fab fa-youtube "></i></a>
+                        <a target="_blank" class="nav-link " href="https://www.youtube.com/channel/UCcu99BEnaNdfIsjXEFtpCBA"><i class="fab fa-youtube "></i></a>
                     </li>
                 </ul>
                 <div class="col-xs-12 col-md-4 col-lg-4 ">

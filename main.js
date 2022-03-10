@@ -3,6 +3,7 @@ var app = new Vue({
     data: {
         isHidden: false,
         clicked: false,
+        delete: false,
         choosedRecipe: [],
         pholder: ("Esplora la ricetta!"),
         recipe_001: ("Crema alle mandorle"),
@@ -253,6 +254,7 @@ var app = new Vue({
         },
         //Ricetta Selezionata:
         selectedRecipe(recipe_id) {
+            this.clicked = true;
             //Accesso a elemento che mi serve e la sua posizione:
             this.ricette.forEach((element, index) => {
                 if (recipe_id == element.id) {
@@ -261,7 +263,12 @@ var app = new Vue({
                 }
             });
             console.log(this.choosedRecipe);
-        }
+        },
         //Ricetta eliminata premendo sul pulsante X
+        deleteRecipes() {
+            this.delete = true;
+            this.clicked = false;
+            this.choosedRecipe = [];
+        }
     }
 });

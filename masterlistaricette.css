@@ -310,7 +310,7 @@ a {
     overflow-y: auto;
     padding: 30px;
     border-radius: 15px;
-    border: 3px solid white;
+    border: 10px solid white;
     display: flex;
     flex-direction: column;
     width: 70vw;
@@ -328,15 +328,15 @@ a {
 }
 
 .selectedRecipe::-webkit-scrollbar {
-    width: 12px;
-    background-color: #0f0f0f;
+    width: 8px;
+    background-color: transparent;
     border-radius: 15px;
 }
 
 .selectedRecipe::-webkit-scrollbar-thumb {
-    background-color: #17d617;
+    background-color: #224a7e;
     border-radius: 20px;
-    border: 2px solid #1b1212;
+    border: 3px solid rgb(219, 180, 180);
     margin-top: 20px;
 }
 
@@ -357,8 +357,14 @@ a {
     align-self: center;
 }
 
-.selectedRecipe i {
+.recipe_root i {
     font-size: 3em;
+    color: #224a7e;
+    position: fixed;
+    z-index: 1000;
+    top: 18%;
+    left: 81%;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 858px) {
