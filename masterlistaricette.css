@@ -367,6 +367,10 @@ a {
     cursor: pointer;
 }
 
+.recipe_root i:hover {
+    color: grey;
+}
+
 @media screen and (max-width: 858px) {
     .selectedRecipe {
         max-height: 600px;
