@@ -23,7 +23,7 @@
     <link rel="icon" href="favicon.ico">
 </head>
 
-<body>
+<body style="overflow-x: hidden;">
     <!-- Inizio HEADER -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
@@ -88,22 +88,24 @@
                 </div>
             </div>
         </div>
-        <div v-show="clicked" id="selectedRecipeContainer" v-for="(ricettaSelezionata, index) in choosedRecipe">
+        <div style="display: none;" v-show="clicked" id="selectedRecipeContainer" v-for="(ricettaSelezionata, index) in choosedRecipe">
             <div class="selectedRecipe">
-                <img class="null" src="novità.png" alt="">
-                <div class="recipeInfo">
-                    <div>
+                <i v-show="clicked" @click="deleteRecipes()" class="fa-solid fa-xmark"></i>
+                <div class="recipeImgIngredients">
+                    <img src="novità.png" alt="">
+                    <div class="ingredients_container">
                         <h2>INGREDIENTI</h2>
                         <p class="ingredients">{{ricettaSelezionata.ingredienti}}</p>
                     </div>
+                </div>
+                <div class="recipeInfo">
                     <div>
                         <h2>PREPARAZIONE</h2>
-                        <p style="padding-bottom: 30px;">{{ricettaSelezionata.procedimento}}</p>
+                        <p>{{ricettaSelezionata.procedimento}}</p>
                     </div>
                 </div>
             </div>
         </div>
-        <i v-show="clicked" @click="deleteRecipes()" class="fa-solid fa-xmark"></i>
     </main>
     <!-- Fine MAIN -->
 
